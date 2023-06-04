@@ -1,5 +1,49 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+```bash
+npx create-next-app@latest --typescript
+
+Need to install the following packages:
+  create-next-app@13.4.4
+Ok to proceed? (y) y
+√ What is your project named? ... code-quantity-calc
+√ Would you like to use ESLint with this project? ... No / Yes
+√ Would you like to use Tailwind CSS with this project? ... No / Yes
+√ Would you like to use `src/` directory with this project? ... No / Yes
+√ Use App Router (recommended)? ... No / Yes
+√ Would you like to customize the default import alias? ... No / Yes
+√ What import alias would you like configured? ... @/*
+Creating a new Next.js app in D:\temp\java\code-quantity-calc.
+
+Using npm.
+
+Initializing project with template: app-tw
+
+
+Installing dependencies:
+- react
+- react-dom
+- next
+- typescript
+- @types/react
+- @types/node
+- @types/react-dom
+- tailwindcss
+- postcss
+- autoprefixer
+- eslint
+- eslint-config-next
+
+
+added 351 packages, and audited 352 packages in 58s
+
+136 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+Initialized a git repository.
+```
+
 ## Getting Started
 
 First, run the development server:
