@@ -41,6 +41,7 @@ Initialized a git repository.
 
 Success! Created code-quantity-calc at D:\temp\java\code-quantity-calc
 ```
+![コマンド](readme/1001.png "1001.png")
 
 ## Getting Started
 
