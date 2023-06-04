@@ -9,6 +9,7 @@ npx create-next-app@latest --typescript
 √ Would you like to use ESLint with this project? ... Yes
 √ Would you like to use Tailwind CSS with this project? ... No
 √ Would you like to use `src/` directory with this project? ... Yes
+　※デフォルトでは全てのファイルがルードディレクトリ配下に作成される
 √ Use App Router (recommended)? ... No
 √ Would you like to customize the default import alias? ... Yes
 √ What import alias would you like configured? ... @/*
@@ -42,6 +43,47 @@ Initialized a git repository.
 Success! Created code-quantity-calc at D:\temp\java\code-quantity-calc
 ```
 ![コマンド](readme/1001.png "1001.png")
+
+■おまけ
+```
+・npmに接続できない場合：npmパッケージの安全性を犠牲
+npm config set strict-ssl false
+
+・npmの取得アドレス設定
+#npm config set registry "http://registry.npmjs.org/"
+npm config set registry https://registry.npm.taobao.org
+npm config get registry
+※国内ではtaobaoミラーを使う（registry.npmjs.orgより古い可能性有）
+```
+
+★★★★★★★★★★
+■外のミラーアドレス検索
+１．nrmをインストール
+```
+    npm view nrm versions
+
+    npm uninstall -g nrm
+
+    # npm install nrm -g
+    npm install nrm -g nrm@1.1.0
+
+    nrm -V
+    nrm --version
+```
+２．nrmを使って外のミラーアドレスを検索（外のバージョンのnrmがある場合エラーになる可能性有）
+```
+    nrm ls
+```
+★★★★★★★★★★
+##### ■**taobaoミラー設定後、cnpmでインストールする**
+１．cnpmのインストール
+```
+    npm install -g cnpm --registry=https://registry.npm.taobao.org
+```
+２．cnpmの使用
+```
+    cnpm install XXXX
+```
 
 ## Getting Started
 
